@@ -97,6 +97,7 @@
         android:layout_marginTop="52dp"
         android:text="View Data"
         android:background="@drawable/edittext_background"
+        android:backgroundTint="@color/design_default_color_primary_dark"
         app:layout_constraintEnd_toEndOf="@+id/et_Mark1"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/btn_Insert"
