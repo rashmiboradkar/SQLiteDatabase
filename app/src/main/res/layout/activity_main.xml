@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/tv_Insert_Data"
-        android:layout_width="336dp"
-        android:layout_height="43dp"
+        android:layout_width="349dp"
+        android:layout_height="49dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
@@ -22,7 +22,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.742"
+        app:layout_constraintHorizontal_bias="0.342"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.175" />
@@ -32,90 +32,127 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="96dp"
         android:layout_marginEnd="24dp"
-        android:ems="10"
-        android:hint="First Name"
-        android:inputType="textPersonName"
         android:background="@drawable/edittext_background"
         android:drawableStart="@drawable/ic_username"
         android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/tv_Insert_Data" />
+
     <EditText
-        android:id="@+id/et_Last_Name1"
+        android:id="@+id/et_Last_Name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@drawable/ic_username"
+        android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Last Name"
-        android:background="@drawable/edittext_background"
         android:inputType="textPersonName"
-        android:drawablePadding="10dp"
-        android:drawableStart="@drawable/ic_username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/et_First_Name" />
 
     <EditText
-        android:id="@+id/et_Mark1"
+        android:id="@+id/et_Mark"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@drawable/ic_marks"
+        android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Marks"
-        android:background="@drawable/edittext_background"
-        android:drawablePadding="10dp"
-        android:drawableStart="@drawable/ic_marks"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/et_Last_Name1" />
+        app:layout_constraintTop_toTopOf="@id/et_Last_Name" />
+
+    <EditText
+        android:id="@+id/et_Email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/et_Mark" />
+
+
+    <EditText
+        android:id="@+id/et_Password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext_background"
+        android:drawableStart="@drawable/ic_password_lock"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/et_Email" />
 
     <Button
         android:id="@+id/btn_Insert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="Insert Data"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/edittext_background"
-        app:layout_constraintStart_toStartOf="@+id/et_Mark1"
-        app:layout_constraintTop_toBottomOf="@+id/et_Mark1" />
+        android:text="Insert Data"
+        app:layout_constraintStart_toStartOf="@+id/et_Password"
+        app:layout_constraintTop_toBottomOf="@+id/et_Password" />
 
     <Button
         android:id="@+id/btn_View"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:text="View Data"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="12dp"
         android:background="@drawable/edittext_background"
         android:backgroundTint="@color/design_default_color_primary_dark"
-        app:layout_constraintEnd_toEndOf="@+id/et_Mark1"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/btn_Insert"
-        app:layout_constraintTop_toBottomOf="@+id/et_Mark1" />
+        android:text="View Data"
+        app:layout_constraintEnd_toEndOf="@+id/et_Password"
+        app:layout_constraintTop_toBottomOf="@+id/et_Password" />
 
     <Button
         android:id="@+id/btn_View_Data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="View Data in Next Activity"
         android:background="@drawable/edittext_background"
+        android:text="View Data in Next Activity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btn_View"
-        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintHorizontal_bias="0.411"
         app:layout_constraintStart_toStartOf="@+id/btn_Insert"
         app:layout_constraintTop_toBottomOf="@+id/btn_View"
-        app:layout_constraintVertical_bias="0.0"/>
+        app:layout_constraintVertical_bias="0.433" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
